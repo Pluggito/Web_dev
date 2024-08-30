@@ -1,0 +1,880 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: rgb(13, 9, 9);
+    color: white;
+}
+
+::-webkit-scrollbar
+{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: grey;
+}
+
+#header{
+    background-image: url('images/pexels-charlesdeluvio-2792602.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 75%; 
+    position: relative;
+}
+
+.container
+{
+    padding: 1.5rem 2rem;
+}
+
+nav{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    margin-left: 2.2rem;
+    margin-top: -0.9rem;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin-left:11.3rem;
+}
+
+nav li a{
+ text-decoration: none;
+ color: black;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 500;
+ font-size: 1.3rem;
+ align-content: center;
+ position: relative;
+ 
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 0;
+    height:2.5px;
+    left: 0px;
+    bottom: -5px;
+    align-self: center;
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    transition: 0.5s;    
+}
+
+nav ul li a:hover
+{
+    color: whitesmoke;
+}
+
+
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+
+.Home
+{
+    color: white;
+    position: relative;
+}
+
+.Home:hover
+{
+    color: grey;
+}
+
+.Home::after
+{
+    content: '';
+    height: 2.5px;
+    bottom: -0.5rem;
+    width: 0;
+    position: absolute;
+    align-self: center;
+    cursor: pointer;
+    background-color: grey;
+    transition: all 0.5;
+}
+
+.Home:hover::after
+{
+    width: 100%;
+}
+
+.btn-1
+{
+    margin-right: 7.9rem;
+    margin-top: -7.9rem;
+}
+
+button
+{
+    height: 2.5rem;
+    width: 7rem;
+    border: 3px solid black;
+    border-radius: 1.3rem;
+    background-color: transparent;
+}
+
+button .contact-btn
+{
+    text-decoration: none;
+    align-content: center;
+    list-style: none;
+    font: 500;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+
+ button:hover
+{
+    background: transparent;
+    transform: scale(1.1);
+    
+}
+
+
+h3{
+    padding: 1rem 1rem 1rem 1rem;
+}
+.icon
+{
+    font-size: 3rem;
+    font-weight: 700;
+    border: 3px transparent solid black;
+    border-radius: 4px;
+    display: inline-block;
+    color: black;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+.icon:hover{
+    transform: translateY(-15px);
+}
+
+.header-text
+{
+    text-align: center;
+    margin-left: 2.5rem;
+    margin-top: 7rem;
+}
+
+.header-text h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.7rem;
+    font-weight: 500;
+    color: black;
+    border: 3px transparent solid black;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header-text h1:hover{
+    transform: scale(1.2);
+}
+
+.header-text h1 span{
+   color: white; 
+}
+
+
+.header-text p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.header-text p span{
+    color: black;
+}
+
+.header-text h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: black
+}
+
+.header-text h2 span{
+    color: white;
+}
+
+/*-----------About-------------*/
+
+#about
+{
+    background-image: url('images/pexels-charlesdeluvio-2792602.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   opacity: 75%;
+   background-position-y: 0.7rem;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 4rem;
+}
+.row-1
+{
+    margin-bottom: 6rem;
+}
+
+.sub-title-1
+{
+    font-size: 3.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: black;
+    border: 3px transparent solid black;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.sub-title-1:hover{
+    transform: scale(1.3);
+}
+
+.sub-title-2
+{
+    font-size: 2.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 500;
+    color: rgb(254, 249, 249);
+    margin-left: 3.75rem;
+}
+
+.sub-title-2 span{
+    color: black;
+}
+
+.text{
+    font-size: 1.32rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 900;
+    color: whitesmoke;
+    margin-left: 3rem;
+}
+
+.text span
+{
+    color: black;
+}
+
+.row-2
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-left: 30rem;
+    margin-top: -50px;
+}
+.links{
+    font-size: 2rem;
+    color: black;
+    margin-top: -35px;
+}
+
+.links.link-2
+{
+    margin-top: 5rem;
+    margin-bottom: 19px;
+}
+
+.links.link-3
+{
+    margin-top: 7.8rem;
+}
+
+.links-content
+{
+    font-size: 20px;
+}
+.links-content-1
+{
+    margin-bottom: 29px;  
+}
+
+.links-content-2
+{
+    margin-bottom: 29px;
+}
+
+/*-------Services-------*/
+#services
+{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+        120deg,
+        rgb(255, 255, 255, 0.4),
+        rgb(0, 0, 0, 0.2)
+    );
+    background-size: 30px ;
+  margin-top: 30px;
+}
+
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); 
+    column-gap: 30px;
+    margin-top: 50px;  
+}
+
+.services-list div{
+    background: rgb(0, 0, 0,0.5);
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 15px;
+    transition: 0.55s;
+
+}
+
+.services-list div i
+{
+    font-size: 45px;
+    margin-bottom: 32px;
+}
+
+.services-list div h2{
+    font-size:25px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+}
+
+.services-list div:hover{
+    background-color: rgb(255, 255, 255, 0.3);
+    color: black;
+    transform: translateY(-15px);
+}
+
+/*-----------portfolio-------*/
+#portfolio
+{
+    padding: 43px 0;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+        150deg,
+        rgb(255, 255, 255, 0.4),
+        rgb(0, 0, 0, 0.3)
+    );
+    background-size: 35px ;
+  margin-top: 30px;
+    height: 100vh;
+}
+
+.class-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    column-gap: 4rem;
+    margin-top: 1.5rem;
+}
+
+.class
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.class img{
+    width: 85%;
+    border-radius: 23px;
+    display: block;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    transition: all 0.5s;
+}
+
+.sub-class
+{
+    width: 90%;
+    height: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255, 0.7),
+        rgba(0,0,0,0.4)
+    );
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2.5rem;
+    font-size: 13px;
+    transition: height 0.5s;
+
+}
+
+.sub-class h3
+{
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.class:hover img{
+    transform: scale(1.1);
+}
+
+.class:hover .sub-class{
+    height: 100%;
+}
+
+.couple
+{
+    display: block;
+    margin: 100px auto;
+    width: fit-content;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.8);
+    transition: all 0.5s;
+    background: transparent;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.couple:hover{
+    background: transparent;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.sub-class a{
+    margin-top: 20px;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+/*-----------contact-----------*/
+#contact{
+    padding: 43px 0;
+background: transparent;
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+background-image: linear-gradient(
+    150deg,
+    rgb(255, 255, 255, 0.4),
+    rgb(0, 0, 0, 0.3)
+);
+background-size: 35px ;
+margin-top: 100px;
+height: 70vh;
+}
+
+.column
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.conatct-left-side
+{
+    flex-basis: 35%;
+}
+
+.conatct-right-side
+{
+    flex-basis: 60%;
+}
+
+.contact-info
+{
+    font: 600;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+
+}
+
+.conatct-left-side p{
+    margin-top: 35px;
+}
+
+.conatct-left-side p i{
+    color: rgba(0,0,0,0.9);
+    margin-right: 15px;
+    font-size: 40px;
+}
+
+.social-icons
+{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+
+.social-icons a:hover{
+    color: white;
+    transform: scale(1.2) translateY(-5px);
+}
+
+.btn-2
+{
+    display: block;
+    margin: 20px 15px;
+    width: fit-content;
+    border: 1px solid rgba(255,255,255);
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.8);
+    transition: all 0.5s;
+    background: transparent;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.btn-2:hover{
+    background: linear-gradient(
+        250deg,
+        rgba(255,255,255,0.5),
+        rgba(0,0,0,0.3)
+
+    );
+    color: #fff;
+    transform: scale(1.1);
+
+}
+
+.conatct-right-side form{
+    width: 100%;
+}
+
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 23px;
+    border-radius: 9px;
+}
+
+.summit
+{  padding-left: 14px;
+    padding-right: 15px;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgba(255,255,255, 0.8);
+    transition: all 0.5s;
+
+}
+
+.summit:hover{
+    background: linear-gradient(
+        250deg,
+        rgba(255,255,255,0.5),
+        rgba(0,0,0,0.3)
+
+    );
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+
+.copyright i{
+    color: black;
+
+}
+
+/*----------css for small screen------*/
+nav .fa-regular
+{
+ display: none;
+}
+
+nav .fa-bars
+{
+    display: none;
+}
+
+
+@media only screen and (max-width:38rem){
+    #header
+    {
+       background: url('images/pexels-charlesdeluvio-2792602.jpg');
+       background-position: center;
+       background-size: 600px;
+       background-repeat: no-repeat;
+    }
+
+ nav .fa-regular
+{
+ display: block;
+ font-size: 25px;
+}
+
+nav .fa-bars
+{
+    display: block;
+ font-size: 25px;
+ margin-left: 425px;
+}
+
+
+ 
+nav ul{
+    background: linear-gradient(rgba(0,0,0,0.2), #fff);
+    position: fixed;
+    top: 0;
+    right:-190px;
+    width: 190px;
+    height: 100vh;
+    padding-top: 50px;  
+    z-index: 2;
+    transition: right 0.5s;
+
+}
+
+nav ul li
+{
+    display: block;
+    margin: 25px;
+  
+}
+
+nav ul .fa-regular
+{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+nav .fa-bars
+{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.btn-1
+{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#portfolio
+{
+    height: auto;
+    background-size: 25px;
+}
+
+
+
+    
+    .icon
+    {
+        font-size: 2.3rem;
+        font-weight: 600;
+        border: 3px transparent solid black;
+        border-radius: 4px;
+        display: inline-block;
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .header-text
+    {
+        margin-top: 22%;
+        font-size: 16px;
+
+    }
+
+    .header-text p span{
+        color: white;
+
+    }
+
+    #about
+    {
+        position: relative;;
+    }
+    .sub-title-1
+    {
+        font-size: 2.3rem;
+        font-weight: 600;
+        display: block;
+        margin-top: -50px;
+    }
+
+    .sub-title-2
+    {
+        font-size: 1.5rem;
+        font: 500;
+    }
+
+    .sub-title-2 span1
+    {
+        color: black;
+    }
+
+    .text{
+        font-size: 1rem;
+        font: 900;
+    }
+    .text span
+    {
+        color: #fff;
+    }
+
+    .row-2
+    {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        row-gap: 30px;
+        margin-left: 5rem;
+    }
+
+    .links
+    {
+        font-size: 1.3rem;
+        
+    }
+
+    .links-content
+    {
+        font-size:15px;
+    }
+
+    .links.link-2 span{
+        color: #fff;
+
+    }
+
+    .links.link-3 span {
+        color: #fff;
+
+    }
+
+    .services-list
+    {
+        row-gap: 30px;
+    }
+
+    .class-list
+    {
+        row-gap: 1.5rem;
+    }
+
+    .copyright i{
+        color: white;
+    
+    }
+    }
+    

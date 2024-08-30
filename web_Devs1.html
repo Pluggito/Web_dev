@@ -4,11 +4,205 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <title>practice</title>
-
+        <link rel="stylesheet" href="Webdev2.css">
+        <script src="https://kit.fontawesome.com/80e6efec85.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <h1>Hey</h1>
-        <p>This is the website 1</p>
+        <div id="header">
+            <div class="container">
+                <div>
+                    <a href="#portfolio" class="icon">Pluggito</h3>
+                </div>
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services" class="Home">Services</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                       
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                    <div class="btn-1">
+                        <button><a href="#contact" class="contact-btn">Contact</a></button>
+                    </div>
+                    
+                </nav>
+                <div class="header-text">
+                    <h1>Hello <span>There!</span></h1>
+                    <p>I'm a Web <span>Developer</span></p>
+                    <h2>I'm Carew, <span>from Nigeria</span></h2>
+                </div>
+
+              
+            </div>
+        </div>
+
+    <!----------About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="row-1">
+                    <h1 class="sub-title-1">About Me</h1>
+                    <h2 class="sub-title-2"><span1>Great</span1> web design <span> without </span>functionality is like a sports car with <span>no engine.</span></h2>
+                    <p class="text">Developed this portfolio website to <span>showcase my front-end</span> development skills and experience. Utilized HTML, CSS frameworks (like Tailwind) for <span>faster development</span>, and JavaScript for animations and interactive elements.</p>
+                </div>
+                <div class="row-2">
+                    <div class="attributes">
+                        <h3 class="links"><span>Skills</span></h3>
+                        <h4 class="links link-2"><span>Experience</span></h4>
+                        <h5 class="links link-3"><span>Education</span></h5>
+                    </div>
+
+                    <div class="links-content">
+                        <div class="links-content-1" id="skills">
+                            <ul>
+                                <li>UI/UX<br>Designing Web/App interfaces</li>
+                                <li>Web Development<br>Web app Development</li>
+                                <li>Frameworks Utilization</li>
+                            </ul>
+                        </div>
+                        <div class="links-content-2" id="experience">
+                            <ul>
+                                <li>2019 - 2021<br>Team lead at Startup LLC.</li>
+                                <li>2017 - 2019<br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                                <li>2016 - 2017<br>Internship at ekart eCommerce.</li>
+                            </ul>
+                        </div>
+                        <div class="links-content-3" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Unversity of Lagos</li>
+                                <li><span>2014</span><br>Babcock college</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                        
+
+                </div>
+               
+            </div>
+
+        </div>
+
+    </div>
+<!----------------Services------------------>
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>lorem ipsum dolor sit amet, consecteur adipiscising elit. Sed nulla nibh, tincidunt sit met sapien quis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>lorem ipsum dolor sit amet, consecteur adipiscising elit. Sed nulla nibh, tincidunt sit met sapien quis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h2>Web Development</h2>
+                    <p>lorem ipsum dolor sit amet, consecteur adipiscising elit. Sed nulla nibh, tincidunt sit met sapien quis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h3>My work</h3>
+            <div class="class-list">
+                <div class="class">
+                    <img src="images/work.jpg" alt="coding">
+                    <div class="sub-class">
+                        <h3>First website</h3>
+                        <p>Made this to showcase my talent in the cyber market</p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="class">
+                    <img src="images/work.jpg" alt="coding">
+                    <div class="sub-class">
+                        <h3>First website</h3>
+                        <p>Made this to showcase my talent in the cyber market</p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="class">
+                    <img src="images/work.jpg" alt="coding">
+                    <div class="sub-class">
+                        <h3>First website</h3>
+                        <p>Made this to showcase my talent in the cyber market</p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="couple">See more</a>
+
+        </div>
+    </div>
+
+    <!--------contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="column">
+                <div class="contact-left-side">
+                    <h2 class="contact-info">Contact Me</h2>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> pluggitoshfl5050@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/justcarew_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/just_carew_"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+
+                    <a href="images/CV.docx" download class="btn-2">Download CV</a>
+
+
+                </div>
+
+                <div class="contact-right-side">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="summit">Submit</button>
+                    </form>
+                </div>
+           </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Carew.</p> 
+        </div>
+    </div>
+
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
     </body>
+   
+
+
 </html>
