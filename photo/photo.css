@@ -7,8 +7,8 @@
 
 body{
     font-family: "Space Grotesk", Roboto;
-    
 }
+
 
 #Header
 {
@@ -106,6 +106,63 @@ img{
 }
 
 /*-----------------about-----------------*/
+#about-1
+{
+    background: rgb(255,255,255);
+    padding: 120px 0;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.row-2
+{
+    letter-spacing: 1px;
+    width: 475px;
+    margin-right: 150px;
+    margin-top: -50px;
+    padding: 1rem 1rem;
+
+
+}
+
+.row-2 p{
+    font: 1rem;
+}
+.row-1 {
+    
+    padding: 2rem; /* Padding around the text */
+    text-align: left; /* Align text to the left */
+    max-width: 800px; /* Limit the width of the section */
+    margin-left: 7rem;
+  }
+  
+  .row-1 h3 {
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 0.9rem; /* Small font for the subheading */
+    letter-spacing: 1.5px; /* Letter spacing for uppercase effect */
+    color: #b30d0d; /* Light purple color */
+    text-transform: uppercase; /* Make text uppercase */
+    margin-bottom: 1rem; /* Space between subheading and paragraph */
+    border-left: 4px solid #b30d0d; /* Left border line */
+    padding-left: 10px; /* Spacing between text and border */
+  }
+  
+  .row-2 h2 {
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-size: 1.5rem; /* Larger font for paragraph */
+    font-weight: 700; /* Make it bold */
+    color: #111111; /* Black color for paragraph */
+    line-height: 1.4; /* Adjust line spacing */
+    margin: 0;
+    max-width: 500px; /* Limit the width of the paragraph */
+  }
 
 nav .fa-regular
 {
