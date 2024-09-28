@@ -9,6 +9,7 @@ body{
     font-family: "Space Grotesk", Roboto;
 }
 
+
 html
 {
     scroll-behavior: smooth;
@@ -52,7 +53,6 @@ nav ul{
     display: flex;
     flex-direction: row;
     column-gap: 30px;
-   margin-right: 3.5rem;
 }
 
 nav li{
@@ -148,6 +148,7 @@ img{
 
 .row-2 p{
     font: 1rem;
+    color: #7a7a7a;
 }
 .row-1 {
     
@@ -204,6 +205,8 @@ img{
   .columns p{
     max-width: 250px;
     letter-spacing: 1px;
+    color: #7a7a7a;
+    font-weight: 400;
   }
 
  .info{
@@ -221,6 +224,40 @@ img{
     transform: scale(1.05);
 }
 
+#about-3{
+    padding: 100px 0;
+    background: linear-gradient(30deg, rgba(255,255,255,0.6),rgba(0,0,0,0.7),#b30d0d);
+}
+
+.manifesto
+{
+    text-align: right;
+    color: whitesmoke;
+    transform: translate(-180px, 30px);
+    position: relative;
+}
+
+.manifesto h5{
+    border-left: 4px solid whitesmoke;
+    letter-spacing: 1px;
+    padding-left: 10px;
+   
+}
+
+.manifesto h2{
+    font-size: 28px;
+}
+
+.manifesto-2
+{
+
+}
+.section-left
+{
+    position: absolute;
+    background: #000;
+    color: #fff;
+}
 nav .fa-regular
 {
  display: none;
