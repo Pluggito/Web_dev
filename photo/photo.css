@@ -9,6 +9,21 @@ body{
     font-family: "Space Grotesk", Roboto;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar
+{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: rgba(0,0,0,0.7);
+}
+
 
 #Header
 {
@@ -29,7 +44,6 @@ nav{
     padding: 1rem 1rem;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 nav ul{
@@ -163,6 +177,49 @@ img{
     margin: 0;
     max-width: 500px; /* Limit the width of the paragraph */
   }
+
+  #about-2
+  {
+    padding: 5.3rem;
+    background-color: #fff;
+  }
+
+  .column
+  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 250px, 300px));  
+    column-gap: 5rem; 
+    margin-left: 10rem; 
+   
+  }
+
+  .columns
+  {
+    text-align: left;
+    border-radius: 1.5rem;
+    padding: 1rem 1rem 1rem 2rem; 
+    transition: all 0.5s;
+  }
+
+  .columns p{
+    max-width: 250px;
+    letter-spacing: 1px;
+  }
+
+ .info{
+    font-size: 28px;
+  }
+
+  .columns i{
+    font-size: 52px;
+    margin-bottom: 1rem;
+    margin-left: 1.7rem;
+   
+  }
+.columns:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    transform: scale(1.05);
+}
 
 nav .fa-regular
 {
