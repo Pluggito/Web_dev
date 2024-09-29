@@ -71,6 +71,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     column-gap: 30px;
+    
    
 }
 
@@ -273,7 +274,7 @@ img{
 .manifesto h2{
     font-size: 28px;
 }
-
+/*----------about-4-----------*/
 .mid-section{
     display: flex;
     flex-direction: column;
@@ -612,8 +613,89 @@ background-image: url('../images/IMG_1931.jpg');
     height: 100%;
     opacity: 0.5;
 }
+/*------------conatct------------*/
+.contact
+{
+    padding: 10rem;
+}
+
+.contacts
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background:#000;
+    padding: 14.5rem;
+    gap: 25rem;    
+}
+
+.contact-info {
+    color: #fff;
+    text-align: left;   
+}
+
+.contact-info h5{
+    letter-spacing: 1px;
+    color: #b30d0d;
+}
+
+.contact-info h1{
+    letter-spacing: 2px;
+    font:  bold 80px "Space Grotesk";
+    width: 700px;
+    margin-top: 20px;
+}
+
+.contact-info h1 span
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.contact-info p{
+    font: bold 16px "Space Grotesk";
+    color: #7a7a7a;
+    margin-top: 30px;
+    width: 350px;
+}
 
 
+.custom-btn{
+    width: 9rem;
+    height: 2rem;
+    padding: 1rem 1rem;
+    border: 2.5px solid #b30d0d;
+    border-radius: 3.5rem;
+    background: transparent;
+    color: #fff;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+.custom-btn:hover{
+    box-shadow: 2px 2px 10px #fff;
+    transform: scale(1.1);
+}
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: linear-gradient(30deg, rgba(255,255,255,0.6),rgba(0,0,0,0.7),#b30d0d);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+.copyright i{
+    color: #b30d0d;
+
+}
+
+/*---------------screen aspect ratio------------*/
 nav .fa-regular
 {
  display: none;
@@ -622,4 +704,9 @@ nav .fa-regular
 nav .fa-sharp 
 {
     display: none;
+}
+
+
+@media  screen () {
+    
 }
