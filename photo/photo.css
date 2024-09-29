@@ -49,6 +49,7 @@ html
     transform: translate(-50%, -50%);
     z-index: -1; /* Make sure the video stays behind other content */
     object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+    
 }
 
 
@@ -591,9 +592,10 @@ background-image: url('../images/IMG_1931.jpg');
 .layers h3
 {
     font-weight: 600;
+    font-size: 1.5rem;
     margin-bottom: 30px;
     color: #fff;
-
+    margin-top: 20px;
 }
 
 .layers p
