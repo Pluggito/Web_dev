@@ -21,7 +21,7 @@ html
 
 ::-webkit-scrollbar
 {
-    width: 0.1rem;
+    width: 0.05rem;
 }
 
 ::-webkit-scrollbar-thumb
@@ -30,18 +30,28 @@ html
 }
 
 
-#Header
-{
-    background-image:linear-gradient(45deg, rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url('../images/pexels-adrien-olichon-1257089-2823459.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-   -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    width: 100%;
-    height: 100vh;
+/* Fullscreen container for video */
+.video-background {
     position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    background: rgba(0,0,0,0.4);
 }
+
+/* Styling for the video to cover the background */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Make sure the video stays behind other content */
+    object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+}
+
+
 
 nav{ 
     display: flex;
@@ -96,8 +106,9 @@ nav li a:hover::after
 }
 
 img{
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
 }
 
 .text{
@@ -119,6 +130,7 @@ img{
     font:  bold 80px "Space Grotesk";
     margin-top: 11.5rem;
     opacity: 0.9;
+    mix-blend-mode: normal;
 
    
 }
@@ -127,6 +139,7 @@ img{
   -webkit-text-stroke: 2px white;
   letter-spacing: 3px;
   text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  mix-blend-mode: multiply;
 }
 
 /*-----------------about-----------------*/
