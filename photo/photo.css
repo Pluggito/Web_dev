@@ -454,12 +454,12 @@ filter: grayscale(0.15) brightness(0.8);
 
 .img1
 {
-    background-image: url('../images/IMG_1080.jpg');
+    background-image: url('../images/IMG_3841.jpg');
 }
 
 .img2
 {
-    background-image: url('../images/IMG_1570.jpg');
+    background-image: url('../images/IMG_5304.jpg');
 }
 
 .img3
@@ -564,6 +564,7 @@ background-image: url('../images/IMG_1931.jpg');
     height: 75vh;
     border-radius: 23px;
     display: block;
+    object-fit: cover;
     transition: transform 0.5s;
 }
 
