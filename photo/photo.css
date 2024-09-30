@@ -205,6 +205,8 @@ img{
     max-width: 500px; /* Limit the width of the paragraph */
   }
 
+  /*------------------about section 2---------------*/
+
   #about-2
   {
     padding: 5.3rem;
@@ -250,7 +252,7 @@ img{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     transform: scale(1.1);
 }
-
+/*--------------about section 3----------------*/
 #about-3{
     padding: 6.25rem 0;
     background: linear-gradient(30deg, rgba(255,255,255,0.6),rgba(0,0,0,0.7),#b30d0d);
@@ -698,7 +700,7 @@ background-image: url('../images/IMG_1931.jpg');
 /*---------------screen aspect ratio------------*/
 nav .fa-regular
 {
- display: none;
+ display:;
 }
 
 nav .fa-sharp 
@@ -712,35 +714,46 @@ nav .fa-sharp
 }
 
 
-@media  only screen and (max-width:2560px) {
-
-    
-    nav {
+@media only screen and (max-width: 420px)
+{
+ 
+    .wrapper-section
+    {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around
-        };
+        flex-direction: column;
+        justify-content: center;
+        min-height: fit-content;
+    }
+
+    .imgs-parent{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.4rem;
+    }
+
+    .img{
+        width: 19rem;
+        height: 5.4rem;
+    }
+    
 }
 
-.text
+@media (min-width: 421px) 
 {
-    text-align: center;
-    position: relative;
-    margin-top: 20rem;
+        
 }
 
-#about-1
+@media (min-width: 768px){
+
+}
+
+@media (min-width: 997px)
 {
-    width: 100%;
-   
+
 }
 
-.row{
-    display: flex;
-    justify-content: space-around;
-}
+@media (min-width: 1024px){
 
-#about-2
-{
-    width: auto;
 }
+    
+ 
