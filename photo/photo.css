@@ -717,7 +717,11 @@ nav  .fa-circle-chevron-down
     margin: 0 auto;
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media(max-width: 343px){
+
+}
+
+@media (min-width: 344px) and (max-width: 480px){
     .video-background
     {
         position: relative;
@@ -819,10 +823,9 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    align-items: center;
     width: 300%;
-    
-    
-    
+    gap: 1rem;   
 }
 
 .row-1{
@@ -832,28 +835,23 @@ flex-wrap: 50%;
 .row-2
 {
 flex-wrap: 50%;
-width: 400px;
 margin-right: 0;
-margin-left: -20rem;
+margin-left: -30rem;
+font-size: 1.5rem;
 }
 
-
-
-
-#about-2
+.row-2 h2
 {
-    width: 100%;
-    height: auto;
-    align-items: center;
+    max-width: 700px;
+    font-size: 1.5rem;
 }
 
 .column
-{   
-   margin-left: 0;
-   display: flex;
-   gap: 3rem;
-   
-
+{
+    width: 80%;
+    display: flex;
+    margin-left: 0;
+    column-gap: 1rem;
 }
 
 #about-3
@@ -864,13 +862,32 @@ margin-left: -20rem;
 
 #about-4
 {
-    width: auto;
+    width: 300%;
     height: auto;
 }
 
 .mid-section
 {
-    width: 200%;
+    display: flex;
+    height: 75vh;
+    position: relative;
+ 
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  
+}
+
+.text-1
+{
+    max-width: 700px;
+}
+
+.text-1 p{
+    font-size: 1.5rem;
 }
 
 #services-1
@@ -879,16 +896,18 @@ margin-left: -20rem;
     height: auto;
 }
 
+
 #wrapper
 {
-    width: ;
-    height: auto;
+   max-width: 250%;
+    position: relative;
 }
 
 .wrapper-section
 {
     display: flex;
     align-items: center;
+    max-width: inherit;
     justify-content: center;
     min-height: fit-content;
 }
@@ -900,7 +919,6 @@ margin-left: -20rem;
     gap: 1rem;
     perspective: 50rem;
 }
-
 
 
 
