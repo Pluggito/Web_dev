@@ -676,6 +676,12 @@ background-image: url('../images/IMG_1931.jpg');
     font-weight: bold;
 }
 
+.custom-btn a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .custom-btn:hover{
     box-shadow: 2px 2px 10px #fff;
     transform: scale(1.1);
@@ -704,7 +710,7 @@ nav .fa-regular
  display: none;
 }
 
-nav .fa-sharp 
+nav .fa-soild
 {
     display: none;
 }
@@ -771,7 +777,7 @@ nav ul.show-menu {
 
 /* Styling for individual list items */
 nav ul li {
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1.5rem;
 }
 
@@ -999,6 +1005,7 @@ filter: grayscale(0.15) brightness(0.8);
     {
         width: 300vw;
     }
+
     .images-selection
     {
         display: grid;
@@ -1068,24 +1075,40 @@ filter: grayscale(0.15) brightness(0.8);
 
 
 
-@media (min-width: 321px){
-  
+@media only screen and (min-width: 321px) and (max-width: 425px){
+    #wrapper{
+        width: 155%;
+        padding: 6rem 100vw;
+    }
+    .images-selection
+    {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-left: 300px;
+    }
 
-   .contact
-   {
-    width: 100%;
+
+
+ .layers{
+        width: 64.5%;
+     }
+
+ .photo img{
+    width: 70%;
+    height: 100vh;
+    object-fit: cover;
+ }
+
+ .photo img:hover{
+    transform: scale(1.05);
+ }
+  .contacts
+  {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    padding: 100vw;
-    
-   }
-
-   .contact-info h1
-   {
-    font-size: 38px;
-   }
+    flex-direction: row;
+  }
     
    .copyright
    {
@@ -1096,7 +1119,7 @@ filter: grayscale(0.15) brightness(0.8);
 }
 
 
-@media (min-width: 421px) 
+@media (min-width: 426px) 
 {
         
 }
