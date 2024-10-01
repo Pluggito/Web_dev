@@ -729,5 +729,10 @@ nav .fa-soild
         overflow: hidden;
     }
 
+    #background-video
+    {
+        object-fit: cover;
+    }
+
     
 }
