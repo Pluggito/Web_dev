@@ -896,20 +896,9 @@ font-size: 1.5rem;
     height: auto;
 }
 
-
-#wrapper
-{
-   max-width: 250%;
-    position: relative;
-}
-
-.wrapper-section
-{
-    display: flex;
-    align-items: center;
-    max-width: inherit;
-    justify-content: center;
-    min-height: fit-content;
+#wrapper{
+    padding: 100%;
+    width: 100%;
 }
 
 .imgs-parent
@@ -917,9 +906,94 @@ font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    perspective: 50rem;
+    perspective: 40rem;
 }
 
+.img{
+    width: 60rem;
+    height: 6rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 1.25s var(--transition),
+    filter 2.5s var(--transition),
+    height 0.25s var(--transition); 
+    position: relative;
+    filter: grayscale(1) brightness(0.5);
+    will-change: transform, filter; 
+}
 
+.img:hover{
+transform: translateZ(4.575rem);
+filter: inherit;
+}
+
+.img::before,
+.img::after{
+content: "";
+position: absolute;
+width: 1.75rem;
+height: 100%;
+right: -1.75rem;
+}
+
+.img::after
+{
+left: -1.5rem;
+}
+
+.img:hover + *
+{
+transform: translateZ(4.32rem) rotateX(14deg);
+z-index: -1;
+filter: grayscale(0.15) brightness(0.8);
+}
+
+.img:hover + * + *{
+transform: translateZ(2.2rem) rotateX(8deg);
+z-index: -2;
+filter: grayscale(0.3) brightness(0.7);
+}
+
+.img:hover + * + * + *{
+transform: translateZ(1.1rem) rotateX(5deg);
+z-index: -3;
+filter: grayscale(0.45) brightness(0.6);
+}
+
+.img:hover + * + * + * + * {
+transform: translateZ(0.4rem) rotateX(3deg);
+z-index: -4;
+filter: grayscale(0.6) brightness(0.5);
+}
+
+.img:has(+ :hover){
+transform: translateZ(4.32rem) rotateX(-14deg);
+filter: grayscale(0.15) brightness(0.8);
+}
+.img:has(+ * + :hover){
+transform: translateZ(2.2rem) rotateX(-8deg);
+filter: grayscale(0.3) brightness(0.7);
+}
+
+.img:has(+ * + * + :hover){
+transform: translateZ(1.1rem) rotateX(-5deg);
+filter: grayscale(0.45) brightness(0.6);
+}
+
+.img:has(+ * + * + * + :hover){
+transform: translateZ(0.4rem) rotateX(-3deg);
+filter: grayscale(0.6) brightness(0.5);
+}
+
+.open{
+height: 120vh;
+transform: translateZ(4.575rem);
+filter: inherit;
+z-index: 1;
+background-size: cover;
+background-position: center;
+
+}
 
 }
