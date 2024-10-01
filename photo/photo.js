@@ -23,14 +23,16 @@ document.body.addEventListener("click",(event)=> {
 
 
 // Function to toggle the menu visibility
+
 function toggleMenu() {
     const menu = document.getElementById('sidemenu'); 
-    menu.classList.toggle('show-menu'); // Toggle the class to show or hide the menu
+    const toggleIcon = document.querySelector('.toggle-menu'); // Get the toggle icon
+    
+    menu.classList.toggle('show-menu'); // Toggle the menu visibility
+    toggleIcon.classList.toggle('rotate'); // Toggle the rotation on the icon
 }
 
 // Add an event listener to the toggle icon
 document.querySelector('.toggle-menu').addEventListener('click', toggleMenu);
-
-
 
 
