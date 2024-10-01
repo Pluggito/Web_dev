@@ -725,7 +725,7 @@ nav .fa-soild
     {
         position: relative;
         width: 300%;
-        height: auto;
+        height: 200vh;
         overflow: hidden;
     }
 
