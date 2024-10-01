@@ -122,7 +122,7 @@ img{
 
 .text small{
     color: whitesmoke;
-    font: bold 12px;
+    font: bold 12px "Space Grotesk";
     letter-spacing: 2px;
    
    
@@ -794,6 +794,114 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+.text
+{
+    margin-top: 10rem;
+}
+
+.text small{
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.text h1{
+ margin-top: 45rem;   
+}
+
+#about-1
+{
+    width: auto;
+    height: auto;
+}
+
+.row{ 
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 300%;
+    
+    
+    
+}
+
+.row-1{
+flex-wrap: 50%;
+}
+
+.row-2
+{
+flex-wrap: 50%;
+width: 400px;
+margin-right: 0;
+margin-left: -20rem;
+}
+
+
+
+
+#about-2
+{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.column
+{   
+   margin-left: 0;
+   display: flex;
+   gap: 3rem;
+   
+
+}
+
+#about-3
+{
+    width: 300%;
+    height: auto;
+}
+
+#about-4
+{
+    width: auto;
+    height: auto;
+}
+
+.mid-section
+{
+    width: 200%;
+}
+
+#services-1
+{
+    width: 300%;
+    height: auto;
+}
+
+#wrapper
+{
+    width: ;
+    height: auto;
+}
+
+.wrapper-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+}
+
+.imgs-parent
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    perspective: 50rem;
+}
+
+
 
 
 }
