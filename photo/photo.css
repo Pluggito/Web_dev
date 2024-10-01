@@ -721,5 +721,13 @@ nav .fa-soild
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+    .video-background
+    {
+        position: relative;
+        width: 300%;
+        height: auto;
+        overflow: hidden;
+    }
+
     
 }
