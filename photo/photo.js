@@ -25,14 +25,19 @@ document.body.addEventListener("click",(event)=> {
 // Function to toggle the menu visibility
 
 function toggleMenu() {
-    const menu = document.getElementById('sidemenu'); 
-    const toggleIcon = document.querySelector('.toggle-menu'); // Get the toggle icon
-    
-    menu.classList.toggle('show-menu'); // Toggle the menu visibility
-    toggleIcon.classList.toggle('rotate'); // Toggle the rotation on the icon
-}
-
-// Add an event listener to the toggle icon
-document.querySelector('.toggle-menu').addEventListener('click', toggleMenu);
-
-
+    const menu = document.getElementById('sidemenu');
+    const toggleIcon = document.querySelector('.toggle-menu');
+  
+    menu.classList.toggle('show-menu');
+    toggleIcon.classList.toggle('rotate');
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleIcon = document.querySelector('.toggle-menu');
+  
+    if (toggleIcon) {
+      toggleIcon.addEventListener('click', toggleMenu);
+    } else {
+      console.error('Element with class "toggle-menu" not found.');
+    }
+  });
